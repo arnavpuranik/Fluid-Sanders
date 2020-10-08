@@ -49,3 +49,5 @@ BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/r
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+OCTAVI_BUILD_DATE := $(shell date +"%Y%m%d-%H%M%S")
