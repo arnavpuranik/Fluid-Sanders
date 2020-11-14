@@ -521,12 +521,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gapps-config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/gapps-config-sanders.txt
 
+ifneq ($(WITH_GAPPS), true)
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
     Via
 #    Wallpapers \
 #    SmsOrganizer \
 #    QPGallery
+endif
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
