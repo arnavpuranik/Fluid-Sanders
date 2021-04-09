@@ -17,8 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Title and summary -->
-    <string name="moto_actions_title">Dr Motopus</string>
-    <string name="actions_header_title">Make your life easy with Dr Motopus</string>
+    <string name="moto_actions_title">Moto Settings</string>
+    <string name="actions_header_title">Make your life easy with Moto Settings</string>
     <string name="moto_actions_summary">Ambient display\, display calibration\, gestures\, dirac</string>
 
     <!-- Device gestures -->
