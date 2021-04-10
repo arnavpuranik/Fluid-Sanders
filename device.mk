@@ -521,20 +521,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gapps-config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/gapps-config-sanders.txt
 
-ifeq ($(WITH_GAPPS), true)
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
     RemovePackages
-endif
 
-ifneq ($(WITH_GAPPS), true)
 # Prebuilt Packages
-PRODUCT_PACKAGES += \
-    Via
+#PRODUCT_PACKAGES += \
+#    Via
 #    Wallpapers \
 #    SmsOrganizer \
 #    QPGallery
-endif
 
 # Offline charger
 PRODUCT_PACKAGES += \
