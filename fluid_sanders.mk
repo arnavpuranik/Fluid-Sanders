@@ -25,15 +25,15 @@ $(call inherit-product, device/motorola/sanders/device.mk)
 # For Specific
 $(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
 
-# Inherit some common OctaviOs stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+# Inherit some common Fluid stuff.
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
-PRODUCT_NAME := octavi_sanders
+PRODUCT_NAME := fluid_sanders
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
@@ -50,11 +50,10 @@ BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/r
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
-# OctaviOS
-OCTAVI_BUILD_DATE := $(shell date +"%Y%m%d-%H%M%S")
-TARGET_FACE_UNLOCK_SUPPORTED := true
-OCTAVI_DEVICE_MAINTAINER := Mayur-Varde
+# Fluid Stuff
+ro.fluid.maintainer= Arnav \
+ro.fluid.cpu= SD625
 
 # GApps
-WITH_GAPPS := true
+TARGET_INCLUDE_GAPPS := true
 TARGET_ARCH := arm64
